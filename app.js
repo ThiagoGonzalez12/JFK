@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import express from 'express'
 import router from './routes/index.js'
+import pdfRoutes from './routes/pdfRoutes.js';
 
 dotenv.config()
 
@@ -14,6 +15,7 @@ app.use(express.json())
 
 app.use(express.static("storage"))
 app.use(express.static("public"))
+app.use('/pdfs', pdfRoutes);
 
 const port = process.env.PORT || 3000
 
