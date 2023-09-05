@@ -49,7 +49,7 @@ header{
     transition: color 0.4s ease-in;
 }
 .menu ul li a:hover{
-    color: rgb(255, 18, 18);
+    color: rgb(0, 99, 255);
 }
 .bi-ul-r{
     margin-right: 5px;
