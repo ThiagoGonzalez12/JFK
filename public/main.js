@@ -21,5 +21,9 @@ document.addEventListener("DOMContentLoaded", () =>{
             icon.classList.toggle("bi-caret-up")
         });
     });
-
 })
+
+VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 10,
+    speed: 400
+});
