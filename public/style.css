@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,28 +11,27 @@ header{
     width: 100vw;
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .logo img{
-    margin-right: 15px;
+    margin-left: 25px;
     width: 30px;
-    filter: saturate(0);
     transition: filter 0.5s ease-in-out;
     cursor: pointer;
-}
-.logo img:hover{
-    filter: saturate(1);
 }
 .menu{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    background: #fff;
 }
 .menu ul{
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-right: 25px;
 }
 .menu ul li{
     display: inline-block;
@@ -71,17 +71,62 @@ header{
 .animate__animated.animate__fadeInUp{
     --animate-duration: 1s;
 }
-
-/*----------------------MAIN----------------------*/
-main{
+/*----------------------HERO----------------------*/
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: url(src/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    width: 100%; 
-    height: calc(100vh - 100px);
-    overflow: hidden;
-    z-index: 1;
 }
-main img{
+/*----------------------MAIN----------------------*/
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: calc(100% - 50px);
+}
+.left-section{
+    position: relative;
+    width: 50%;
     height: 100%;
-    object-fit: cover;
+}
+.info{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.info span{
+    color: rgba(28, 28, 28, 0.7);
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.info h2{
+    color: #1c1c1c;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+.info p{
+    color: rgba(28, 28, 28, 0.7);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.rigth-section{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.rigth-section img{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
