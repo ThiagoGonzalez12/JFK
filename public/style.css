@@ -70,8 +70,8 @@ header{
 .specialties.active .submenu, .school.active .submenu{
     display: block;
 }
-.animate__animated.animate__fadeInUp{
-    --animate-duration: 1s;
+.animate__animated.animate__fadeIn{
+    --animate-duration: 0.5s;
 }
 /*----------------------HERO----------------------*/
 .hero{
