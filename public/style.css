@@ -13,7 +13,7 @@ header{
     width: 100vw;
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .logo img{
@@ -27,7 +27,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: #fff;
+    background: transparent;
 }
 .menu ul{
     list-style: none;
@@ -43,7 +43,7 @@ header{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #1c1c1c;
     padding: 0.625rem;
     transition: color 0.4s ease-in;
@@ -60,7 +60,7 @@ header{
     height: auto;
     width: calc(100% + 20px);
     top: 2rem;
-    background: rgba( 255, 255, 255, 1);
+    background: transparent;
     z-index: 10;
 }
 .submenu li{
@@ -167,6 +167,7 @@ header{
 }
 .box p{
     font-size: 15px;
+    text-align: center;
 }
 .box figure{
     text-align: center;
@@ -177,5 +178,9 @@ header{
     .contain{
         flex-direction: column;
         align-items: center;
+    }
+    .box{
+        height: 265px;
+        max-width: 55%;
     }
   }
