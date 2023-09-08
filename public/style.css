@@ -8,71 +8,6 @@
 body{
     overflow-x: hidden;
 }
-/*----------------------HEADER----------------------*/
-header{
-    width: 100vw;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    margin-left: 25px;
-    width: 30px;
-    transition: filter 0.5s ease-in-out;
-    cursor: pointer;
-}
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background: transparent;
-}
-.menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-right: 25px;
-}
-.menu ul li{
-    display: inline-block;
-    position: relative;
-}
-.menu ul li a{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #1c1c1c;
-    padding: 0.625rem;
-    transition: color 0.4s ease-in;
-}
-.menu ul li a:hover{
-    color: rgb(0, 99, 255);
-}
-.bi-ul-r{
-    margin-right: 5px;
-}
-.submenu{
-    display: none;
-    position: absolute;
-    height: auto;
-    width: calc(100% + 20px);
-    top: 2rem;
-    background: transparent;
-    z-index: 10;
-}
-.submenu li{
-    margin-top: 5px;
-    padding-bottom: 5px;
-}
-.specialties.active .submenu, .school.active .submenu{
-    display: block;
-}
-.animate__animated.animate__fadeIn{
-    --animate-duration: 0.5s;
-}
 /*----------------------HERO----------------------*/
 .hero{
     width: 100vw;
@@ -174,13 +109,3 @@ header{
     font-size: 5em;
 }
 /*----------------------MEDIA QUERIES----------------------*/
-@media screen and (max-width: 1401px) {
-    .contain{
-        flex-direction: column;
-        align-items: center;
-    }
-    .box{
-        height: 265px;
-        max-width: 55%;
-    }
-  }
