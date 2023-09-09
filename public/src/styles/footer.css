@@ -61,7 +61,7 @@ footer{
 }
 /*----------------------MEDIAS QUERIES----------------------*/
 @media screen and (max-width: 800px){
-    .footer__conteiner{
+    .footer__container{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
@@ -71,5 +71,6 @@ footer{
     .footer__box{
         margin: 0;
         height: 180px;
+        text-align: center;
     }
 }
